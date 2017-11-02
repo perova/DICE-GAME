@@ -1,9 +1,5 @@
 body { 
-  background: url(1.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+ background-color: white;
 }
 
 
@@ -14,7 +10,7 @@ body, .row ,input, .btn{
 	
 }
 h2 {
-	color: white;
+	color: black;
 }
 .right{
 	float: right;

@@ -1,8 +1,9 @@
+
 lucky_numbers = []; // random lucky number array. Up to 8 members
 ticket = [];
 random_number = 0; // random number 0-9
 gameOver = true; // game over flag
-
+data=[];
 
 // generating DIVs with unique IDs and corresponding content (0-9) in number_block DIV
 number_blocks = document.getElementById('number_blocks');
@@ -51,22 +52,14 @@ function get_number() {
 		lucky_numbers.push(random_number);
 		document.getElementById('lucky_numbers').innerHTML = lucky_numbers;
 	} else if(gameOver=true){
-		document.getElementById('lucky').innerHTML = lucky_numbers;
-
+		document.getElementById('data').innerHTML = data;
+		lucky_numbers.push(data);
+		// for (var i =0; i <= lucky; i++) {
+		// 	document.getElementById('li').innerHTML = i;
+		// }
 	}else {
 		alert("Game over!");
 		gameOver = true;
 	}
 }
 
-function sayHelloWorld() {
-
-    var hello = "hello";
-
-    var world = "world";
-
- 
-
-    window.location.href = "game.php?w1=" + hello + "&w2=" + world;
-
-}
